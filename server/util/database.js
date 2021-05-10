@@ -4,7 +4,6 @@ const MongoClient = mongodb.MongoClient;
 let _db;
 
 const mongoConnect = callback => {
-    // MongoClient.connect('mongodb://admin:password@localhost:27017/db', function (err, db)
     MongoClient.connect("mongodb+srv://admin:12345@cluster0.iqwyj.mongodb.net/test?authSource=admin&replicaSet=atlas-h73uvk-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true")
         .then(client => {
             console.log('Connected!');

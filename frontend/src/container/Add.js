@@ -8,12 +8,6 @@ class Home extends Component {
     super(props);
     this.state ={product: ""}
   }
-  componentDidMount(){
-    axios.get("http://localhost:3001/product").then(res=>{
-      console.log(res)
-      {this.setState({product: res.data})}
-    })
-  }
   render(){
   return (
     <div >
